@@ -1,1 +1,380 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.inactive{
+    overflow: hidden;
+}
+
+.full-bg{
+    background-color: #e3e3e3;
+}
+
+aside{
+    position: relative;
+}
+
+.toggle-menu{
+    padding: 10px;
+    border: 3px solid #38a4dd;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 4px;
+    z-index: 10;
+    background: #fff;
+}
+
+.toggle-menu span{
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: #38a4dd;
+    margin-bottom: 3px;
+}
+
+.toggle-menu span:last-of-type{
+    margin-bottom: 0;
+}
+
+.menu-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    z-index: 15;
+    display: none;
+}
+
+.menu{
+    position: fixed;
+    left: -120%;
+    top: 0;
+    z-index: 20;
+    transition: 1s ease;
+}
+
+.menu.active{
+    left: 0px;
+}
+
+.menu .side-menu{
+    height: 100vh;
+    background: #777;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.menu .side-menu a{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+img{
+    max-width: 100%;
+}
+
+figure{
+    position: relative;
+}
+
+.left-side figure div{
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.skill{
+    position: relative;
+    height: 5px;
+    border-radius: 3px;
+    background: #ccc;
+}
+
+.skill .achievement{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 5px;
+    width: 20%;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.skill .achievement span{
+    position: absolute;
+    right: -7px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    top: -4.5px;
+    display: inline-block;
+}
+
+.decoration-none{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.fa{
+    font-size: 32px;
+}
+
+.left-side aside{
+    height: 100%;
+}
+
+.left-side a,
+.left-side address{
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.text-grey{
+    color: #d7e6f6;
+}
+
+.right-side .fa{
+    font-size: 2.5rem;
+}
+
+.right-side .fa,
+.right-side h2,
+.right-side p,
+.date-address{
+    color: #737373;
+}
+
+.right-side h4{
+    color: #636363;
+    font-size: 1.25rem;
+}
+
+.watch img{
+    width: 30px;
+    height: auto;
+}
+
+.interests figure img{
+    width: 50%;
+    height: 100%;
+}
+
+.box-shadow-blue{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.box-shadow-blue:hover{
+    box-shadow: 0 0 15px rgba(56, 164, 221, 1);
+    transition-duration: 0.5s;
+}
+
+/********COVER LETTER********/
+
+.signature{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #636363 !important;
+}
+
+/**********PORTFOLIO**********/
+
+
+.box-shadow-red{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.box-shadow-red:hover{
+    box-shadow: 0 0 15px rgba(241, 92, 91, 1);
+    transition-duration: 0.5s;
+}
+
+.box-shadow-grey{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.box-shadow-grey:hover{
+    box-shadow: 0 0 15px rgba(85, 81, 87, 1);
+    transition-duration: 0.5s;
+}
+
+.box-shadow-aqua{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.box-shadow-aqua:hover{
+    box-shadow: 0 0 15px rgba(28, 190, 200, 1);
+    transition-duration: 0.5s;
+}
+
+.food-img{
+    order: 0;
+}
+
+.food-img figure,
+.food-img figure img{
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.card-caption5{
+    order: 1;
+    background: #f4be18;
+}
+
+.par1{
+    order: 2;
+}
+
+.box-shadow-orange{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.box-shadow-orange:hover{
+    box-shadow: 0 0 15px rgba(244, 190, 24, 1);
+    transition-duration: 0.5s;
+}
+
+
+/* Glow */
+.hvr-glow {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: #1884bc;
+    transition: 0.7s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.masonery figure{
+    margin-bottom: 0;
+}
+
+.portfolio-list article{
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.masonery{
+    position: relative;
+}
+
+#map_wrapper {
+    height: 400px;
+    margin-top: 20px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.contact input,
+.contact textarea{
+    padding-left: 0;
+}
+
+.contact .form-control{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    resize: none;
+}
+
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #38a4dd;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+    color: #38a4dd;
+}
+.form-control:-ms-input-placeholder { /* IE 10+ */
+    color: #38a4dd;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+    color: #38a4dd;
+}
+
+.contact form button{
+    background: #38a4dd;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/****************SINGLE PAGE*****************/
+
+.caption h3{
+    font-size: 1.3rem;
+}
+
+.caption p{
+    font-size: 0.8rem;
+}
+
+.gallery article{
+    position: relative;
+}
+
+.gallery figure{
+    overflow: hidden;
+}
+
+.gallery a img{
+    transition: 1s linear;
+}
+
+.gallery a:hover img{
+    transform: scale(1.1);
+}
+
+.gallery-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(83, 91, 130, 0.7);
+    padding: 5px 10px;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+}
+
+.gallery a:hover .gallery-hover{
+    opacity: 1;
+}
+
 /* You can add global styles to this file, and also import other style files */

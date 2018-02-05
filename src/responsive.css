@@ -1,0 +1,87 @@
+
+@media(min-width:576px){
+
+    .right-side h2{
+        text-align: left !important;
+    }
+
+    .w-85{
+        width: 85% !important;
+    }
+
+    .comment2{
+    position: relative;
+    left: 15%;
+}
+
+}
+
+@media(min-width:768px){
+
+    .left-side a,
+    .left-side address{
+        font-size: 1rem;
+    }
+
+    .left-side h3{
+        font-size: 1.5rem;
+    }
+
+    .left-side .fadeInDown h1{
+        font-size: 2rem;
+    }
+
+}
+
+
+
+
+@media(min-width:992px){
+
+    .left-side a,
+    .left-side address{
+        font-size: 1.25rem;
+    }
+
+    .left-side h3{
+        font-size: 1.5rem;
+    }
+
+    .left-side .fadeInDown h1{
+        font-size: 2.5rem;
+    }
+
+    .par1{
+        order: 0;
+    }
+
+    .card-caption5{
+        order: 1;
+    }
+
+    .caption h3{
+        font-size: 2rem;
+    }
+
+    .caption small{
+        font-size: 90%;
+    }
+
+    .caption p{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .box-shadow-orange .bg-white,
+    .box-shadow-orange .card-caption5{
+        padding: 2rem !important;
+    }
+
+    .caption p{
+        font-size: 1rem;
+    }
+
+}
